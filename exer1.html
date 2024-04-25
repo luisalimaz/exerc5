@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+       
+        .texto-azul {
+            color: blue;
+        }
+    </style>
+    <h1 id="mensagem">OI MUNDO!</h1>
+    <button id="mudarTexto">Mudar Texto</button>
+<script>
+    var mensagem = document.getElementById('Mensagem');
+    var botao = document.getElementById('MudarTexto');
+
+    botao.addEventListener('click', function() {
+           
+            mensagem.textContent = "Alterado!";
+      
+            mensagem.classList.add('texto-azul');
+        });
+</script>
+</html>
+</body>
+</html>
